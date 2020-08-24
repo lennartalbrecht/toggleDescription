@@ -1,6 +1,6 @@
 /*
  Toggle too long desc text 
- @author https://github.com/lenningpage
+ @author https://github.com/lennartalbrecht
  req: https://code.jquery.com/jquery-3.5.1.min.js
 */
 
