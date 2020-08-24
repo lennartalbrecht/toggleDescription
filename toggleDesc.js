@@ -1,6 +1,7 @@
 /*
- TEST - - Toggle too long desc text 
- @author LA 
+ Toggle too long desc text 
+ @author https://github.com/lenningpage
+ req: https://code.jquery.com/jquery-3.5.1.min.js
 */
 
     const descName = '#intro-text'; // Selector of description element
