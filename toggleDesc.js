@@ -1,12 +1,12 @@
 /*
  Toggle too long desc text 
  @author https://github.com/lennartalbrecht
- req: https://code.jquery.com/jquery-3.5.1.min.js
+ req: https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js
 */
 
-    const descName = '#intro-text'; // Selector of description element
+function toggleDesc(descName,descHiddenHeight) {
+
     const descHeight = $(descName).height(); // full height of element
-    const descHiddenHeight = 200; // default height
 
     if (descHeight > descHiddenHeight) {
         // set default height and overflow - max-height for working transition
@@ -19,16 +19,18 @@
         $(descName).after('<button class="descShow btn is--primary">Show More</button> <button class="descHide btn is--primary" style="display: none;">Show less</button>');
 
         // Toggle height and buttons
-        $(".descShow").click(function(){
+        $(".descShow").click(function () {
             $(descName).removeClass("hide-it");
-            $(descName).css("max-height",descHeight);
+            $(descName).css("max-height", descHeight);
             $('.descHide').toggle();
             $(this).toggle();
-          });
-        $(".descHide").click(function(){
+        });
+        $(".descHide").click(function () {
             $(descName).addClass("hide-it");
-            $(descName).css("max-height",descHiddenHeight);
+            $(descName).css("max-height", descHiddenHeight);
             $('.descShow').toggle();
             $(this).toggle();
         });
-    };
+    }
+    ;
+}
