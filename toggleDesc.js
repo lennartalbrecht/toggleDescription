@@ -16,7 +16,7 @@ function toggleDesc(descName,descHiddenHeight) {
         $(descName).addClass("hide-it");
 
         // add buttons
-        $(descName).after('<button class="descShow btn is--primary">Show More</button> <button class="descHide btn is--primary" style="display: none;">Show less</button>');
+        $(descName).after('<button class="descShow btn is--primary">show more</button> <button class="descHide btn is--primary" style="display: none;">show less</button>');
 
         // Toggle height and buttons
         $(".descShow").click(function () {
