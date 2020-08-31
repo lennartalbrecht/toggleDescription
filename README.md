@@ -1,4 +1,4 @@
-# toggleDescription - Test repository
+# toggleDescription
 Snippet to toggle your (product) description, if element height is bigger than x.
 
 Just include toggleDesc.js and jQuery in your header then use <code>toggleDesc(descName,descHiddenHeight)</code> on your page.
